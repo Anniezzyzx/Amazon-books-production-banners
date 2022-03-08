@@ -1,0 +1,163 @@
+/** Main reset ---------- */
+html, body { padding: 0; margin: 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+html { font-size: 1em; }
+
+body { font-size: 100%; }
+
+a img, :link img, :visited img { border: 0; }
+
+*, *:before, *:after { box-sizing: border-box; }
+
+/** Centering utilties ------------------ */
+.center { left: 0; right: 0; margin-left: auto; margin-right: auto; }
+
+.middle { top: 0; bottom: 0; margin-top: auto; margin-bottom: auto; }
+
+.center-middle { left: 0; right: 0; top: 0; bottom: 0; margin: auto; }
+
+.center-trans { left: 50%; transform: translateX(-50%); }
+
+.middle-trans { top: 50%; transform: translateY(-50%); }
+
+.center-middle-trans { left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+/** Generic utilties ---------------- */
+.alpha-0 { opacity: 0; }
+
+.invisible { visibility: hidden; }
+
+.hide { display: none; }
+
+.offstage { left: -9999px; top: -9999px; }
+
+.anti-alias { font-smooth: always; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.gpu { -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: translateZ(0); }
+
+.line-fix { outline: 1px solid transparent; }
+
+@supports (-moz-appearance: meterbar) { .gpu { transform: translateZ(0) rotate(0.02deg); } }
+
+.transform-reset { transform: none !important; }
+
+/** Main base --------- Generic ad layout file */
+body { background: #707070; }
+
+#ad_content { background: #fff; font-family: Helvetica, Arial, sans-serif; overflow: hidden; }
+
+#ad_content div, #ad_content img, #ad_content svg { position: absolute; }
+
+.backup { background: url("backup.jpg") -1px -1px no-repeat; background-size: 300px 600px; }
+
+#ad_content, .backup { border: 1px solid black; cursor: pointer; position: absolute; width: 300px; height: 600px; }
+
+/* ---------------------------------------- */
+#txt_3 { top: 525px; left: 110px; }
+
+#logo { top: 558px; left: 189px; }
+
+#kid { top: 44px; left: 229px; }
+
+#monster { top: 332px; left: 20px; }
+
+#animation { background: url("anim.png"); width: 300px; height: 600px; top: 0px; right: 0px; }
+
+#txtbit_1 { top: 164px; left: 85px; }
+
+#txtbit_2 { top: 165px; left: 127px; }
+
+#txtbit_3 { top: 204px; left: 93px; }
+
+#txtbit_4 { top: 213px; left: 147px; }
+
+#txtbit_5 { top: 244px; left: 56px; }
+
+#txtbit_6 { top: 244px; left: 117px; }
+
+#txtbit_7 { top: 245px; left: 157px; }
+
+#txtbit_8 { top: 285px; left: 59px; }
+
+#txtbit_9 { top: 292px; left: 113px; }
+
+#coin_1 { top: 469px; left: 97px; }
+
+#coin_2 { top: 451px; left: 127px; }
+
+#coin_3 { top: 451px; left: 159px; }
+
+#coin_4 { top: 469px; left: 188px; }
+
+.sprite-jpg { background-image: url('sprite.jpg') }
+.sprite-jpg.bg {
+  width: 300px;
+  height: 636px;
+  background-position: 0px 0px;
+  background-size: 303px 639px; }
+.sprite-png { background-image: url('sprite.png') }
+.sprite-png.coin {
+  width: 17px;
+  height: 17px;
+  background-position: -141px -39px;
+  background-size: 210px 192px; }
+.sprite-png.kid {
+  width: 41px;
+  height: 67px;
+  background-position: -168px 0px;
+  background-size: 210px 192px; }
+.sprite-png.logo {
+  width: 95px;
+  height: 29px;
+  background-position: 0px -108px;
+  background-size: 210px 192px; }
+.sprite-png.monster {
+  width: 70px;
+  height: 65px;
+  background-position: 0px 0px;
+  background-size: 210px 192px; }
+.sprite-png.txtbit_1 {
+  width: 33px;
+  height: 28px;
+  background-position: -168px -72px;
+  background-size: 210px 192px; }
+.sprite-png.txtbit_2 {
+  width: 89px;
+  height: 34px;
+  background-position: -75px 0px;
+  background-size: 210px 192px; }
+.sprite-png.txtbit_3 {
+  width: 44px;
+  height: 27px;
+  background-position: -99px -108px;
+  background-size: 210px 192px; }
+.sprite-png.txtbit_4 {
+  width: 60px;
+  height: 18px;
+  background-position: -75px -39px;
+  background-size: 210px 192px; }
+.sprite-png.txtbit_5 {
+  width: 51px;
+  height: 27px;
+  background-position: -93px -69px;
+  background-size: 210px 192px; }
+.sprite-png.txtbit_6 {
+  width: 30px;
+  height: 27px;
+  background-position: -168px -105px;
+  background-size: 210px 192px; }
+.sprite-png.txtbit_7 {
+  width: 88px;
+  height: 33px;
+  background-position: 0px -69px;
+  background-size: 210px 192px; }
+.sprite-png.txtbit_8 {
+  width: 44px;
+  height: 26px;
+  background-position: 0px -165px;
+  background-size: 210px 192px; }
+.sprite-png.txtbit_9 {
+  width: 129px;
+  height: 19px;
+  background-position: 0px -141px;
+  background-size: 210px 192px; }
